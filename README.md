@@ -44,3 +44,25 @@ If available, include screenshots here:
 
 ## 📁 Folder Structure
 
+TaskManagerApp/
+│
+├── app/
+│ ├── java/com/example/taskmanager/
+│ │ ├── model/TaskModel.java # Data model for task object
+│ │ ├── adapter/TaskListAdapter.java # Adapter for RecyclerView
+│ │ ├── AddTaskActivity.java # Add new task UI + logic
+│ │ ├── HomeActivity.java # Main screen after login
+│ │ ├── MainActivity.java # Handles Google Sign-In
+│ │ └── ... # Additional Activities if needed
+│ └── res/layout/
+│ ├── activity_main.xml # Google Sign-In screen
+│ ├── activity_home.xml # Home task list screen
+│ ├── activity_add_task.xml # Task creation form
+│ └── ...
+│
+└── README.md
+
+yaml
+Copy
+Edit
+
