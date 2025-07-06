@@ -62,7 +62,28 @@ TaskManagerApp/
 │
 └── README.md
 
-yaml
+📂 Firestore Database Schema
+🔸 Collection: tasks
+Each document in this collection represents a task created by a user.
+
+📄 Document Structure (TaskModel)
+json
 Copy
 Edit
+{
+  "taskId": "auto-generated", // Document ID (can be stored separately)
+  "taskName": "Submit Assignment",
+  "status": "PENDING", // or "COMPLETED", etc.
+  "userId": "UID_FROM_FIREBASE_AUTH",
+  "category": "Personal" // or "Work", "Learning"
+}
+🔑 Fields Explained:
+Field	Type	Description
+taskId	String	Unique task ID, assigned by Firestore and mapped locally
+taskName	String	The name or title of the task
+status	String	The current status of the task (e.g., PENDING, DONE)
+userId	String	Firebase Auth User ID who created the task
+category	String	Task classification: Personal, Work, or Learning
+
+
 
