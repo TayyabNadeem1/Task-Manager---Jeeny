@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Task Manager</string>
+    <string name="default_web_client_id">your-client-id-from-firebase.apps.googleusercontent.com</string>
+
+</resources>
